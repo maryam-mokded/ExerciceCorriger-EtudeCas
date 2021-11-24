@@ -1,0 +1,98 @@
+body{
+    background-image: url(../images/menubackg.jpg);
+    background-size: cover;
+}
+
+
+fieldset{
+    background-color: beige;
+    width: 615px;
+    height: 367px;
+}
+form{
+    margin-top: 22px;
+    margin-left: 355px;
+}
+h4{
+    color: blue;
+    font-family: comic sans ms;
+}
+
+textarea{
+    font-size: 16px;
+    font-family: comic sans ms;
+    width: 265px;
+    height: 34px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 18px;
+    margin-left: 27px;
+
+    font-family: comic sans ms;
+}
+input[type=text]{
+    font-size: 16px;
+    font-family: comic sans ms;
+    width: 100px;
+    border-radius: 0.5em;
+    text-align: center;
+}
+input[type=number]{
+    font-size: 16px;
+    font-family: comic sans ms;
+    width: 100px;
+    border-radius: 0.5em;
+    text-align: center;
+}
+select{
+    font-size: 16px;
+    font-family: comic sans ms;
+    width: 145px;
+    border-radius: 0.5em;
+}
+input[type=button]{
+    text-align: center;
+    font-size: 18px;
+    font-family: comic sans ms;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0.5em;
+}
+input[type=submit]{
+    text-align: center;
+    font-size: 18px;
+    font-family: comic sans ms;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0.5em;
+}
+
+.erreur{
+    color: red;
+    font-size: 18px;
+    font-weight :bold;
+}
+
+.erreurX{
+    color: green;
+    font-size: 18px;
+    font-family: comic sans ms;
+}
+.erreurY{
+    color: red;
+    font-size: 18px;
+    font-family: comic sans ms;
+}
+
+#BONUS{
+    display: none;
+    width: 149px;
+    height: 32px;
+    margin-left: 260px;
+}

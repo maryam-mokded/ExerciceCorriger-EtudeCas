@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temps</title>
+</head>
+<body>
+    <script>
+        let j=0;
+        let h=0;
+        let min=0;
+        let s=0;
+        let jour=0;
+
+
+        h=window.prompt("Donner le nombre d'heure :");
+        h=Number(h);
+        
+        min=window.prompt("Donner le nombre de minute :");
+        min=Number(min);
+
+        s=window.prompt("Donner le nombre de second :");
+        s=Number(s);
+
+        document.write("L'heure est : "+ h + ':' + min + ':' + s );
+
+        let somme = (h*3600) + (min*60) + s;
+        document.write("<br>"+"La somme d'heure egale : "+somme);
+        
+        
+            jour = Math.floor(somme/86400);
+            H = Math.floor((somme % 86400)/3600);
+            Min = Math.floor(((somme % 86400)% 3600) /60);
+            S = Math.floor(((somme % 86400)% 3600) % 60 );
+
+        document.write("<br>"+"jour = "+jour+"   heur = " + H + "   Min = " + Min + "   S = " + S);
+    </script>
+</body>
+</html>

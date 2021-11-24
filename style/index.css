@@ -1,0 +1,145 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 4fr 0fr;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    background-color:#fe8206;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    background-color:#fe8206;
+}
+
+.head img{
+    height: 130px;
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.head h1{
+    font-size: 52px;
+    align-self: center;
+    justify-self: center;
+    font-family: Ravie;
+    color: #f8c1c9;
+}
+
+.nav input[value]{
+    font-size: 22px;
+    color : wheat;
+    font-weight: bold;     
+}
+
+.nav input[type=button]{
+    background-image: url(../images/Capture.PNG);
+    background-repeat: repeat-x;
+    border : 0.4px solid black;
+    border-radius: 0.4em;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-top: 5px;
+    box-shadow: 3px 2px 0px rgb(87, 80, 80); 
+}
+
+.hide{
+    display: none;
+    background-color: #575050;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 0px;
+    padding-bottom: 9px;
+    border-radius: 0.5em;
+    margin-bottom:4px;
+    margin-top: 0px;
+    margin-left: 6px;
+    list-style-type: none;
+}
+
+.nav input[type=button]:hover{
+    background-image: url(../images/Capture2.PNG);
+    background-repeat: repeat-x;
+}
+
+.btn1{
+    padding-right: 160px;
+    padding-left: 160px;
+}
+
+.btn2{
+    padding-left: 160px;
+    padding-right: 146px;
+}
+
+.btn3{
+    padding-left: 160px;
+    padding-right: 162px;
+}
+
+.btn4{
+    padding-left: 124px;
+    padding-right: 110px;
+}
+
+
+.body a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 22px;
+}
+
+.body a:hover{
+    font-size: 24px;
+    color:fbdb9f;
+}
+
+.nav{
+    padding-left: 39px;
+    padding-top: 70px;
+}
+
+
+.Ex{
+    background-color: #575050;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom:4px;
+    border-radius: 0.5em;
+    width : 358px;
+}
+
+.section{
+    background-color:#fe9b36 ;
+    margin-right: 35px;
+    margin-left: 38px;
+    margin-top: 26px;
+}
+
+.section img{
+    height:590px;
+    width: 933px;
+    margin : 30px;
+}
+
+.footer {
+    background-color:#fe8206;
+}
+
+.footer h2{
+    font-size: 15px;
+    color :white;
+    margin-left: 750px;
+    margin-top: 40px;
+}
+
+
+
+

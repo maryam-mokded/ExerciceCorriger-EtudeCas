@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="nav.css"> 
+</head>
+<body>
+
+  <input type="text" id="nb1 "><br><br><br> 
+
+    <div id="d1">
+    <input type="button" value="Math">    
+    <ul id="l1" class="hide">
+        <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+        <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+        <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+        <li><a href="EX4Math.html"> Exercice 4 </a></li>
+        <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+        <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+        <li><a href="EX7Math.html"> Exercice 7 </a></li>
+        <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+    </ul>
+    </div><br><br>
+    
+</body>
+<script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+    let nb1 = document.getElementById("nb1");
+
+    if( nb1 <= 50){
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+    } 
+</script>
+</script>
+</html>

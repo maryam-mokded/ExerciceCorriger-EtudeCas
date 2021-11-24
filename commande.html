@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<head>
+    <title>Passer La Command</title>
+    <link rel="stylesheet" type="text/css" href="../PageWeb/style/cmmande.css">
+</head>
+<body>
+<form name="f" action="Etude de cas.html" onsubmit ="return Validation()" >
+    <fieldset>
+    
+    <h2>Votre Commande <span id="Erreur" class="erreur"></span></h2>
+    <h4>NB : nombre de personne max = 10 </h4>
+
+    <p>
+
+    Entrée  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <select name="entree" id="Entr" class="Donner">
+       <option value="aucun">Aucun</option><br>
+       <option value="salade">Salade</option><br>
+       <option value="saladeMich">Salade Michouia</option><br>
+       <option value="fromage">Fromage</option><br>
+       <option value="ricotta">Ricotta</option><br>
+   </select>
+   &nbsp&nbsp&nbsp&nbsp pour  &nbsp&nbsp&nbsp 
+   <input type="number" name="pers1" id="p1" min="1" max="10">&nbsp Personne(s) <br>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <span id="ErreurEntree" class="erreurY"></span><span id="ValideEntree" class="erreurX"></span><br>
+   
+   
+
+    Principale  &nbsp&nbsp&nbsp 
+   <select name="principale" id="Princ" class="Donner">
+       <option value="aucun">Aucun</option><br>
+       <option value="couscous">Couscous</option><br>
+       <option value="spaghetti">Spaghetti</option><br>
+       <option value="pizza">Pizza</option><br>
+       <option value="omlette">Omlette</option><br>
+   </select>
+   &nbsp&nbsp&nbsp pour  &nbsp&nbsp&nbsp
+    <input type="number" name="pers2" id="p2" min="0" max="10">&nbsp Personne(s) <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id="ErreurPrincipale" class="erreurY"></span><span id="ValidePrincipale" class="erreurX"></span><br>
+
+
+    Dessert &nbsp&nbsp&nbsp&nbsp&nbsp
+    <select name="dessert" id="Dess" class="Donner">
+         <option value="aucun">Aucun</option><br>
+         <option value="saladeF">Salade de Fruits</option><br>
+         <option value="gateau">Gâteau</option><br>
+         <option value="glace">Glace</option><br>
+         <option value="cookies">Cookies</option><br>
+    </select>  
+    &nbsp&nbsp&nbsp pour  &nbsp&nbsp&nbsp
+    <input type="number" name="pers3" id="p3" min="0" max="10">&nbsp Personne(s) <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id="ErreurDessert" class="erreurY"></span><span id="ValideDessert" class="erreurX"></span><br>
+   
+
+     Boissons  &nbsp&nbsp&nbsp&nbsp
+     <select name="boissons" id="Bois" class="Donner">      
+         <option value="aucun">Aucun</option><br>
+         <option value="eau">Eau</option><br>
+         <option value="jusF">Jus Fraise</option><br>
+         <option value="jusB">Jus Banane</option><br>
+         <option value="coca">Coca Cola</option><br>
+     </select>
+     &nbsp&nbsp&nbsp pour &nbsp&nbsp&nbsp
+    <input type="number" name="pers4" id="p4" min="0" max="10">&nbsp Personne(s) <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id="ErreurBoissons" class="erreurY"></span><span id="ValideBoissons" class="erreurX"></span><br>
+
+    &nbsp&nbsp&nbsp&nbsp Total &nbsp&nbsp 
+    <input type="text" name="res" id="resultat" size ="10">&nbsp&nbsp DT
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+    <input type="button" name="choix"  onclick="calcule()" value="Calculer">
+<br><br>
+</p>
+
+</fieldset><p>
+     Dessert gratiut &nbsp&nbsp&nbsp&nbsp&nbsp
+    <select  id="BONUS" class="Donner1">
+        <option value="aucun">Aucun</option><br>
+        <option value="saladeF">Salade de Fruits</option><br>
+        <option value="gateau">Gâteau</option><br>
+        <option value="glace">Glace</option><br>
+        <option value="cookies">Cookies</option><br>
+    </select>
+    <br>
+   &nbsp&nbsp&nbsp&nbsp&nbsp 
+   <span id="ErreurEmail" class="erreur"></span><br>
+   <textarea placeholder="entrez votre adresse ici " name="Email" id='email'></textarea>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   
+   <input type="submit" value="Passer La commande"></p>
+    
+
+   </form> 
+   <script>
+    function Validation()
+    {
+        let valid = true;
+        let Erreur ="";
+        let ErreurEmail ="";
+        let ErreurEntree ="";  let ErreurPrincipale=""; let ErreurDessert=""; let ErreurBoissons="";
+        let ValideEntree ="";  let ValidePrincipale=""; let ValideDessert=""; let ValideBoissons="";
+
+        let entre = document.getElementById("Entr").value;
+        let princ = document.getElementById("Princ").value;
+        let Dess = document.getElementById("Dess").value;
+        let Bois = document.getElementById("Bois").value;
+        
+        
+        let p1 = document.getElementById("p1").value;
+        let p2 = document.getElementById("p2").value;
+        let p3 = document.getElementById("p3").value;
+        let p4 = document.getElementById("p4").value;
+        
+        let email = document.getElementById('email').value;  
+        
+        //Verification de choix de la commande 
+        // if ((entree == "aucun") && (princ == "aucun") && (Dess == "aucun") && (Bois == "aucun")){
+        //     document.getElementById("Erreur").value = "Il faut choisir au moins une chose "
+        //     valid =false;
+        // }else {
+        //     document.getElementById("Erreur").value = "Votre commande est validé "
+        // }
+        //choix 1 : Entree
+        if ((entre == "aucun") && (p1.length == 0 ) ){
+                
+                document.getElementById('ErreurEntree').innerHTML = '';
+                 valid = false;
+    
+       
+        }else if (((entre == "aucun") && (p1.length !=0))){
+    
+                document.getElementById('ErreurEntree').innerHTML = 'il faut entrez le plat ';
+                  valid = false;
+
+        }else if (((entre != "aucun") && (p1.length == 0))){
+    
+            document.f.pers1.value = 1 ;
+            document.getElementById('ValideEntree').innerHTML = 'Choix 1 Validé';
+
+        } else {
+            document.getElementById('ValideEntree').innerHTML = 'Choix 1 Validé';
+        }    
+ 
+        //choix 2 : plat principale 
+        if ((princ == "aucun") && (p2.length == 0 ) ){
+                
+                document.getElementById('ErreurPrincipale').innerHTML = '';
+                 valid = false;
+    
+        }else if (((princ == "aucun") && (p2.length !=0))){
+    
+                document.getElementById('ErreurPrincipale').innerHTML = 'il faut entrez le plat ';
+                  valid = false;
+
+        }else if (((princ != "aucun") && (p2.length == 0))){
+    
+            document.f.pers2.value = 1 ;
+            document.getElementById('ValidePrincipale').innerHTML = 'Choix 2 Validé';
+
+        } else {
+            document.getElementById('ValidePrincipale').innerHTML = 'Choix 2 Validé';
+
+        }    
+       
+        //choix 3 : Dessert 
+        if ((Dess == "aucun") && (p3.length == 0 ) ){
+                
+                document.getElementById('ErreurDessert').innerHTML = '';
+                 valid = false;
+    
+        }else if (((Dess == "aucun") && (p3.length !=0))){
+    
+                document.getElementById('ErreurDessert').innerHTML = 'il faut entrez le plat ';
+                  valid = false;
+    
+        }else if (((Dess != "aucun") && (p3.length == 0))){
+    
+            document.f.pers3.value = 1 ;
+            document.getElementById('ValideDessert').innerHTML = 'Choix 3 Validé';
+
+        } else {
+            document.getElementById('ValideDessert').innerHTML = 'Choix 3 Validé';
+
+        }    
+      
+        
+
+          //choix 4 : Boissons 
+          if ((Bois == "aucun") && (p4.length == 0 ) ){
+                
+                document.getElementById('ErreurBoissons').innerHTML = '';
+                 valid = false;
+    
+        }else if (((Bois == "aucun") && (p4.length !=0))){
+    
+                document.getElementById('ErreurBoissons').innerHTML = 'il faut entrez le plat ';
+                  valid = false;
+    
+        }else if (((Bois != "aucun") && (p4.length == 0))){
+    
+            document.f.pers4.value = 1;
+            document.getElementById('ValideBoissons').innerHTML = 'Choix 4 Validé';
+    
+        } else {
+            document.getElementById('ValideBoissons').innerHTML = 'Choix 4 Validé';
+        }    
+      
+
+
+        //Verification email
+         if (email.length <= 0)
+         {
+            document.getElementById('ErreurEmail').innerHTML = 'Veuillez taper votre Email';
+             valid = false;
+            } else if (email.indexOf('@') == -1) {
+            document.getElementById('ErreurEmail').innerHTML = 'Adresse Email invalide';
+            valid = false;
+         } else {
+            document.getElementById('ErreurEmail').innerHTML = "";
+         }    
+        return valid;
+    }
+</script>
+   <script>
+    
+    
+    function calcule(){
+    
+    //choix 1
+    let a = document.f.entree.value;
+    let x ;
+    let nb1 = document.f.pers1.value ;
+    if ((a != 'aucun' )&&(nb1 == 0)){
+        nb1 =1;
+        document.f.pers1.value=1;
+    }
+    if ( a == 'salade') {
+        x = nb1 * 3.900; 
+    }else if ( a == 'saladeMich'){
+        x= nb1 * 5.000;
+    }else if ( a == 'fromage'){
+        x = nb1 * 1.000;
+    }else if (a == 'ricotta'){
+        x = nb1 * 2.000;
+    }else {
+        x = 0 ;
+    }
+   
+   //choix 2
+    let b = document.f.principale.value;
+    let y ;
+    let nb2 = document.f.pers2.value;
+    if ((b != 'aucun' )&&(nb2 == 0)){
+        nb2 =1;
+        document.f.pers2.value = 1;
+    }
+    if ( b == 'omlette') {
+        y = nb2 * 9.500; 
+    }else if ( b == 'pizza'){
+        y = nb2 * 11.900;
+    }else if ( b == 'spaghetti'){
+        y = nb2 * 13.500;
+    }else if (b == 'couscous'){
+        y = nb2 * 13.500;
+    }else {
+        y = 0 ;
+    }
+   
+   //choix 3
+    let c = document.f.dessert.value;
+    let z ;
+    let nb3 = document.f.pers3.value;
+    if ((c != 'aucun' )&&(nb3 == 0)){
+        nb3 =1;
+        document.f.pers3.value = 1;
+    }
+    if ( c == 'glace') {
+        z = nb3 * 3.500; 
+    }else if ( c == 'biscuit'){
+        z = nb3 * 9.000;
+    }else if ( c == 'gateau'){
+        z = nb3 * 4.500;
+    }else if (c == 'saladeF'){
+        z = nb3 * 8.500;
+    }else {
+        z = 0 ;
+    }
+   
+   //choix 4
+    let d = document.f.boissons.value;
+    let w ;
+    let nb4 = document.f.pers4.value;
+    if ((d != 'aucun' )&&(nb4 == 0)){
+        nb4 =1;
+        document.f.pers4.value = 1;
+    }
+    if ( d == 'eau') {
+        w = nb4 * 1.500; 
+    }else if ( d == 'coca'){
+        
+        w = nb4 * 2.200;
+    }else if ( d == 'jusB'){
+        w = nb4 * 4.500;
+    }else if (d == 'jusF'){
+        w = nb4 * 3.500;
+    }else {
+        w = 0 ;
+    }
+ 
+    //calcule du total du commande
+        let somme = (x + y + z + w) ;
+        let res = somme.toFixed(3);
+        document.f.res.value = res;
+   
+    let p2 = document.getElementById("BONUS");
+
+    if (document.f.res.value >= 50.000){
+        
+       p2.style.display = "block";
+    }else {
+      p2.style.display = "none";
+    }
+
+}
+   </script>
+   
+</body>
+</html>

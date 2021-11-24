@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=0;
+        let y=0;
+
+        let aux=0;
+
+        x = window.prompt("donner x ");
+        x = Number(x);
+
+        y = window.prompt("donner y ");
+        y = Number(y);
+
+        if( x > y ){
+            aux=x;
+            x=y;
+            y=aux;
+            document.write("X = "+ x + "      Y = " + y);    
+        }else{
+            document.write("X = "+ x + "      Y = " + y);        
+        }
+
+    </script>
+
+</body>
+</html>

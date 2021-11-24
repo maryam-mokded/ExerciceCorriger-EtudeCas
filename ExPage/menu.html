@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../PageWeb/style/menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    $("#showmenu").click(function(e){
+
+  e.preventDefault();
+
+  $("#menu").toggleClass("show");
+
+});
+
+ 
+
+$("#menu a").click(function(event){
+
+  event.preventDefault();
+
+  if($(this).next('ul').length){
+
+    $(this).next().toggle('fast');
+
+    $(this).children('i:last-child').toggleClass('fa-caret-down fa-caret-left');
+
+  }
+
+});
+
+</script>    
+
+<nav id="menu" class="left">
+
+    <ul>
+
+    <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+
+    <li><a href="#"><i class="fa fa-info-circle"></i>About</a></li>
+
+    <li> <a href="#"><i class="fa fa-laptop"></i>Services <i class="fa fa-caret-down"></i></a>
+
+        <ul>
+
+        <li><a href="#">Service</a></li>
+
+        <li><a href="#">Service</a></li>
+
+        <li><a href="#">Service</a></li>
+
+        </ul>
+
+    </li>
+
+    <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+
+    </ul>
+
+    <a href="#" id="showmenu"> <i class="fa fa-align-justify"></i> </a>
+
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.Menu{
+    display: grid;
+    grid-template-columns:5fr 5fr ;
+    background-image: url(../images/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+}
+.sale{    
+    padding-left: 400px;
+}
+
+.sucre{
+    padding-left: 170px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}

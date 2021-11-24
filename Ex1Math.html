@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice Math 1</title>
+    <link rel="stylesheet" type="text/css" href="style/Ex1Math.css"> 
+</head>
+<body>
+    <div class="head">
+        <a href="index.html"><img src="images/logo.png"></img></a>
+        <h1>Bienvenue Dans Le Monde js</h1>
+    </div>
+        <div class="body">
+            
+<div class="nav">
+    <div id="d1">
+        <input type="button" value="Math" class="btn1">    
+        <ul id="l1" class="hide">
+            <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+            <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+            <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+            <li><a href="EX4Math.html"> Exercice 4 </a></li>
+            <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+            <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+            <li><a href="EX7Math.html"> Exercice 7 </a></li>
+            <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+            <li><a href="Ex9Math.html"> Exercice 9 </a></li>
+        </ul>
+        </div>
+        
+        <div id="d2">
+            <input type="button" value="String" class="btn2">    
+            <ul id="l2" class="hide">
+                <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                <li><a href="Ex6String.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+            
+            <div id="d3">
+            <input type="button" value="Date" class="btn3">    
+            <ul id="l3" class="hide">
+                <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+       
+<a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+</div>
+            <div class="section">
+                    <div class="titre">Exercice 1</div>
+                    <div class="gdpartie1">
+                        <div class="partie1">Enoncé </div>
+                        <div class="enonce"><p>Effectuer les 5 opérations mathématique (+,-,*,/,%) sur
+                             2 nombres entrés au clavier.</p>
+                        </div>
+                    </div>
+                    <div class="gdpartie2">
+                        <div class="partie2">Exécution</div>
+                        
+                          <div class="form">
+                            <form name="fr">   
+                             <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                Donner A &nbsp
+                                <input type="text" name="a" size=25% class="Donner"> 
+                                &nbsp&nbsp&nbsp
+                                Donner B  &nbsp
+                                <input type="text" name="b" size=25% class="Donner"><br><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                Choisir l'opération &nbsp&nbsp&nbsp&nbsp
+                                <select name="operation" >
+                                    <option value=""></option>
+                                    <option value="som">Somme  </option>
+                                    <option value="sous">Soustraction</option>
+                                    <option value="div">Division  </option>
+                                    <option value="multi">Multiplication&nbsp&nbsp&nbsp</option>
+                                    <option value="mod">Modulo</option></select>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp
+                                <input type="button" name="calculer" onclick="calcule()" value="Calculer" size="15px">
+                          </div>
+                                    <div class="resultat">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp
+                                        <input type="text" name="res">
+                                    </div>
+                             </p>
+                            </form>
+                    </div>
+
+                    <div  class="gdpartie3">
+                        <div class="partie3">code</div>
+                        <div class="code">
+                            <div class="num">
+                                <script>
+                                    let i=0;
+                                    for(i=0;i<40;i++){
+                                        document.write(i+1);
+                                        document.write("<br>");
+                                    }
+                                </script>
+                            </div>
+
+            <div class="corps">
+                <p>
+                    <code class ="blue"><</code>
+                    <code class ="blue">script</code>
+                    <code class ="blue">></code>
+                    <br>
+                    <code class ="blue">Function</code>
+                    <code class ="marron">Calculer</code>
+                    <code class ="blanc">(){</code>
+                    <br>       
+                    <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                    <code class="lgblue">a</code>
+                    <code class="balnc">=</code>
+                    <code class="vert">Number</code>
+                    <code class ="blanc">(</code>
+                    <code class ="lgblue">document</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">fr</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">a</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">value</code>
+                    <code class ="blanc">);</code>
+                    <br>
+                    <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                    <code class="lgblue">b</code>
+                    <code class="blan">=</code>
+                    <code class="vert">Number</code>
+                    <code class ="blanc">(</code>
+                    <code class ="lgblue">document</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">fr</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">b</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">value</code>
+                    <code class ="blanc">);</code>     
+                    <br>
+                    <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                    <code class="lgblue">caractere</code>
+                    <code class="blan">=</code>
+                    <code class="vert">Number</code>
+                    <code class ="blanc">(</code>
+                    <code class ="lgblue">document</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">fr</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">operation</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">value</code>
+                    <code class ="blanc">);</code>     
+                    <br>
+                    <code class="violet">&nbsp&nbsp Switch</code>
+                    <code class="blanc">(</code>
+                    <code class="lgblue">caractere</code>
+                    <code class="blan">){</code><br>
+                        <code class="violet">&nbsp&nbsp&nbsp&nbspCase</code>
+                        <code class ="marron">"somme"</code>
+                        <code class ="blanc">:</code><br>
+                        <code class ="blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp let</code>
+                        <code class ="lgblue">som</code>
+                        <code class ="blanc">=</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">b</code> 
+                        <code class ="blanc">;</code>    
+                        <br>
+                        <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">fr</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">res</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">value</code>
+                        <code class ="blanc">=</code> 
+                        <code class ="blanc">(</code>
+                        <code class ="marron">"Resultat"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"+"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">b</code>       
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"="</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">som</code>       
+                        <code class ="blanc">);</code><br>
+                        <code class="violet">&nbsp &nbsp&nbsp &nbspbreak</code>
+                        <code class ="blanc">;</code>    
+                        <br><br>
+
+                        <code class="violet">&nbsp&nbsp&nbsp&nbsp Case</code>
+                        <code class ="marron">"soustraction"</code>
+                        <code class ="blanc">:</code><br>
+                        <code class ="blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp let</code>
+                        <code class ="lgblue">sous</code>
+                        <code class ="blanc">=</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">-</code>
+                        <code class ="lgblue">b</code> 
+                        <code class ="blanc">;</code>    
+                        <br>
+                        <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">fr</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">res</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">value</code>
+                        <code class ="blanc">=</code> 
+                        <code class ="blanc">(</code>
+                        <code class ="marron">"Resultat"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"-"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">b</code>       
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"="</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">sous</code>       
+                        <code class ="blanc">);</code><br>
+                        <code class="violet">&nbsp&nbsp&nbsp&nbsp break</code>
+                        <code class ="blanc">;</code>    
+                        <br><br>   
+                    
+                        <code class="violet">&nbsp&nbsp&nbsp&nbsp Case</code>
+                        <code class ="marron">"division"</code>
+                        <code class ="blanc">:</code><br>
+                        <code class ="blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp let</code>
+                        <code class ="lgblue">div</code>
+                        <code class ="blanc">=</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">/</code>
+                        <code class ="lgblue">b</code> 
+                        <code class ="blanc">;</code><br>
+                        <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">fr</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">res</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">value</code>
+                        <code class ="blanc">=</code> 
+                        <code class ="blanc">(</code>
+                        <code class ="marron">"Resultat"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"/"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">b</code>       
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"="</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">div</code>       
+                        <code class ="blanc">);</code><br>
+                        <code class="violet">&nbsp&nbsp&nbsp&nbsp break</code>
+                        <code class ="blanc">;</code>    
+                    <br><br>
+
+                    <code class="violet">&nbsp&nbsp&nbsp&nbsp Case</code>
+                    <code class ="marron">"multiplication"</code>
+                    <code class ="blanc">:</code><br>
+                    <code class ="blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp let</code>
+                    <code class ="lgblue">multi</code>
+                    <code class ="blanc">=</code>
+                    <code class ="lgblue">a</code>
+                    <code class ="blanc">-</code>
+                    <code class ="lgblue">b</code> 
+                    <code class ="blanc">;</code>    
+                    <br>
+                    <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">fr</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">res</code>
+                    <code class ="blanc">.</code>
+                    <code class ="lgblue">value</code>
+                    <code class ="blanc">=</code> 
+                    <code class ="blanc">(</code>
+                    <code class ="marron">"Resultat"</code>
+                    <code class ="blanc">+</code>
+                    <code class ="lgblue">a</code>
+                    <code class ="blanc">+</code>
+                    <code class ="marron">"*"</code>
+                    <code class ="blanc">+</code>
+                    <code class ="lgblue">b</code>       
+                    <code class ="blanc">+</code>
+                    <code class ="marron">"="</code>
+                    <code class ="blanc">+</code>
+                    <code class ="lgblue">multi</code>       
+                    <code class ="blanc">);</code><br>
+                    <code class="violet">&nbsp&nbsp&nbsp&nbsp break</code>
+                    <code class ="blanc">;</code>    
+                    <br><br>
+                        
+                    <code class="violet">&nbsp&nbsp&nbsp&nbsp Case</code>
+                        <code class ="marron">"modulo"</code>
+                        <code class ="blanc">:</code><br>
+                        <code class ="blue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp let</code>
+                        <code class ="lgblue">mod</code>
+                        <code class ="blanc">=</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">%</code>
+                        <code class ="lgblue">b</code> 
+                        <code class ="blanc">;</code>    
+                        <br>
+                        <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">fr</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">res</code>
+                        <code class ="blanc">.</code>
+                        <code class ="lgblue">value</code>
+                        <code class ="blanc">=</code> 
+                        <code class ="blanc">(</code>
+                        <code class ="marron">"Resultat"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">a</code>
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"%"</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">b</code>       
+                        <code class ="blanc">+</code>
+                        <code class ="marron">"="</code>
+                        <code class ="blanc">+</code>
+                        <code class ="lgblue">mod</code>       
+                        <code class ="blanc">);</code><br>
+                        <code class="violet">&nbsp&nbsp&nbsp&nbsp break</code>
+                        <code class ="blanc">;</code>    
+                        <br><br>
+                        <code class ="blue"><</code>
+                        <code class ="blue">/</code>
+                        <code class ="blue">script</code>
+                        <code class ="blue">></code>
+                        <br>
+                    </p>
+                </div>
+                   
+    </div>
+</div>
+                    </div>
+            </div>
+    </div>
+        <div class="footer">
+            <h2>&copy copyright ISET Bizerte ---<a href="#"> WebMaster</a></h2>
+        </div>
+
+
+
+
+<script>
+             function calcule(){
+             let a=0 ,b=0;
+                a = Number(document.fr.a.value);
+                
+                b = Number(document.fr.b.value);
+        
+                let car;
+                car= (document.fr.operation.value);
+                
+                switch (car) {
+                    case 'som' :
+                    let som = a+b;
+                    document.fr.res.value = ("Resultat = "+ a + " + "+ b + " = "+som);    
+                        break;
+                
+                        
+                    case 'sous' :
+                    let sous = a-b;
+                    document.fr.res.value = ("Resultat = " + a + " - "+ b + " = "+sous);    
+                        break;
+                        
+                    case 'div' :
+                    let div = a/b;
+                    document.fr.res.value = ("Resultat = " +a + " / "+ b + " = "+div);    
+                        break;
+                
+                        
+                    case 'multi' :
+                    let mult= a*b;
+                    document.fr.res.value = ("Resultat = "+ a + " * "+ b + " = "+mult);    
+                        break;
+                
+                        
+                    case 'mod' :
+                    let mod = a%b;
+                    document.fr.res.value = ("Resultat = " + a + " % "+ b + " = "+mod);    
+                        break;
+                
+                    default:
+                    document.fr.res.value = ("Erreur .. Vérifier les donner !!");
+                        break;
+                }
+            }
+</script>
+        
+<script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+    
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+</script>
+<script>
+    let d2 = document.getElementById("d2");
+    let l2 = document.getElementById("l2");
+
+    d2.onmouseover = aff;
+    function aff(){
+    l2.style.display = "block";
+    }
+    d2.onmouseout = cac;
+    function cac(){
+    l2.style.display = "none";
+}
+</script>
+<script>
+
+    let d3 = document.getElementById("d3");
+    let l3 = document.getElementById("l3");
+
+    d3.onmouseover = aff;
+    function aff(){
+    l3.style.display = "block";
+    }
+    d3.onmouseout = cac;
+    function cac(){
+    l3.style.display = "none";
+    }
+</script>
+</body>
+</html>

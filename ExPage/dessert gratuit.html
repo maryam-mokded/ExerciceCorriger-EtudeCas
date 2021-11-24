@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+#BONUS{
+    display: none;
+    width: 149px;
+    height: 32px;
+    margin-left: 260px;
+}
+    </style>
+    <input type="text" id="a" >
+    
+    <input type="text" id="b">
+    <input type="button" value=calculer onclick="calculer()">
+    <input type="text" id="res">
+    <select  id="BONUS" class="Donner1">
+        <option value="aucun">Aucun</option><br>
+        <option value="saladeF">Salade de Fruits</option><br>
+        <option value="gateau">Gâteau</option><br>
+        <option value="glace">Glace</option><br>
+        <option value="cookies">Cookies</option><br>
+    </select>
+    <br>
+   
+    <script>
+        function calculer(){
+            let a = document.getElementById("a").value ;
+            let b = document.getElementById("b").value ;
+            let p2 = document.getElementById("BONUS");
+
+            document.getElementById("res").value = a+b;
+
+            if ( document.getElementById("res").value >= 50){
+               p2.style.display = "block";
+            }else {
+               p2.style.display = "none";
+      }
+
+        }
+    </script>
+</body>
+</html>

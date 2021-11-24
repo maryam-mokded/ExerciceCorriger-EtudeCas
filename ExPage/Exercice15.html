@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let annee = Array("janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre");
+
+           document.write("La Taille du tableau est" + annee.length + "<br>");
+           document.write(annee.join(" | ") +"<br>");
+
+       let nb =window.prompt("donner l'annee souhaite ");
+        
+let c,i;
+         for(i=0;i<(annee.length);i++)
+        {
+            if(nb == annee[i])
+            {
+                document.write("La position du mois   " + nb + "  est  : ");
+                c = i + 1 ;    
+                document.write( c + "<br>");
+
+            }
+        }
+
+        let T=0;
+        
+            if (c == "1"){
+                T = 1;
+                document.write("Le mois " + nb + " est appartient a la " + T + "<sup>er</sup>" + " trimestre de l'année");                
+            }
+
+            else { if ((c == "2" ) || (c == "3" )){
+                T = 1;
+                document.write("Le mois " + nb + " est appartient a la " + T + "<sup>ème</sup>" + " trimestre de l'année");                
+            } 
+
+            else{ if ( (c == "4" ) || (c == "5" ) || (c == "6" )){
+                T = 2;
+                document.write("Le mois " + nb + " est appartient a la " + T + "<sup>ème</sup>" + " trimestre de l'année");                
+            }
+
+            else{ if ( (c == "7" ) || (c == "8" ) || (c == "9" )){
+                T = 3;
+                document.write("Le mois " + nb + " est appartient a la " + T + "<sup>ème</sup>" + " trimestre de l'année");                
+                }
+                else{ if ( (c == "10" ) || (c == "11" ) || (c == "12" )){
+                T = 4;
+                document.write("Le mois " + nb + " est appartient a la " + T + "<sup>ème</sup>" + " trimestre de l'année");                
+                }
+            }}}}
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let jour;
+let mois;
+let annee;
+jour = window.prompt("donner le nombre de jours ");
+jour = Number(jour);
+
+annee = Math.floor(jour / 365);
+mois = Math.floor((jour  % 365 )/30);
+jour = Math.floor((jour  % 365 ) % 30);
+document.write("Annee  = " +annee+"  Mois = "+mois +  "  jour = "+jour);
+
+
+    </script>
+</body>
+</html>

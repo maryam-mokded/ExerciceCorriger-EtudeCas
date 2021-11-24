@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice String 6</title>
+    <link rel="stylesheet" type="text/css" href="style/Ex6String.css"> 
+</head>
+<body>
+    <div class="head">
+        <a href="index.html"><img src="images/logo.png"></img></a>
+        <h1>Bienvenue Dans Le Monde js</h1>
+    </div>
+        <div class="body">
+            
+<div class="nav">
+    <div id="d1">
+        <input type="button" value="Math" class="btn1">    
+        <ul id="l1" class="hide">
+            <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+            <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+            <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+            <li><a href="EX4Math.html"> Exercice 4 </a></li>
+            <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+            <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+            <li><a href="EX7Math.html"> Exercice 7 </a></li>
+            <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+            <li><a href="Ex9Math.html"> Exercice 9 </a></li>
+        </ul>
+        </div>
+        
+        <div id="d2">
+            <input type="button" value="String" class="btn2">    
+            <ul id="l2" class="hide">
+                <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                <li><a href="Ex6String.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+            
+            <div id="d3">
+            <input type="button" value="Date" class="btn3">    
+            <ul id="l3" class="hide">
+                <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+       
+<a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+</div>
+            <div class="section">
+                    <div class="titre">Exercice 6</div>
+                    <div class="gdpartie1">
+                        <div class="partie1">Enoncé </div>
+                        <div class="enonce"><p> On a deux champs texte. Dans le premier on entre un texte et dans
+                             le second<br> on entre un caractère. Écrire par 2 manières la fonction qui affiche vrai
+                              si le<br> caractère est compris dans le texte et faux sinon. La première en utilisant 
+                              indexOf <br>et la 2ème en écrivant une boucle en utilisant la méthode char At( ) . </p>
+                        </div>
+                    </div>
+                    <div class="gdpartie2">
+                        <div>
+                        <div class="partie2">Exécution</div>
+                        
+                          <div class="form">
+                            <form name="fr">   
+                             <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                                 
+                                <label>La première methode : </label><br><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                Chaine &nbsp
+                                <input type="text" name="ch1" id="chaine" size=4% class="Donner"> 
+                                &nbsp&nbsp&nbsp
+                                Caractère  &nbsp
+                                <input type="text" name="s" id="char" size=6% class="Donner">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="button" name="cher" onclick="chercher()" value="Chercher" size="60%">
+                                <br>
+                            </div>
+                                    <div class="resultat">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        &nbsp&nbsp&nbsp&nbsp
+                                        <input type="text" name="res" id="resultat">
+ 
+                               </div>
+                          
+                            <div>
+                        
+                          <div class="form">
+                            <form name="fr">   
+                             <p>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+
+                                 <label>La deuxième methode : </label><br><br>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                Chaine2 &nbsp
+                                <input type="text" name="ch1" id="chaine2" size=4% class="Donner"> 
+                                &nbsp&nbsp&nbsp
+                                Caractère2  &nbsp
+                                <input type="text" name="s" id="char2" size=6% class="Donner">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="button" name="cher" onclick="chercher2()" value="Chercher2" size="60%">
+                                <br><br>
+                            </div>
+                                    <div class="resultat">
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                        &nbsp&nbsp&nbsp&nbsp
+                                        <input type="text" name="res" id="resultat2">
+ 
+                               </div>
+                            </div>
+                            </p>
+                            </form>
+                    </div>
+                    </div>
+                    <div  class="gdpartie3">
+                      <div class="partie3">code</div>
+                      <div class="code">
+                        <div class="num">
+                            <script>
+                                let i=0;
+                                for(i=0;i<30;i++){
+                                    document.write(i+1);
+                                    document.write("<br>");
+                                }
+                            </script>
+                        </div>
+                      
+                        <div class="corps"> <p>                              
+                            <code class ="vert">// La premiére methode :</code><br>
+                            
+                            <code class ="blue"><</code>
+                            <code class ="blue">script</code>
+                            <code class ="blue">></code>
+                            <br>
+                            <code class ="blue">Function</code>
+                            <code class ="marron">Chercher</code>
+                            <code class ="blanc">(){</code>
+                            <br>       
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">ch</code>
+                            <code class="balnc">=</code>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"chaine"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">);</code>
+                            <br>
+                            
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">s</code>
+                            <code class="balnc">=</code>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"char"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">);</code>
+                            <br>
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">x</code>
+                            <code class="balnc">=</code>
+                            <code class ="lgblue">ch</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">indexOf</code> 
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">s</code>
+                            <code class ="blanc">) );</code><br>
+                            <code class="violet">&nbsp&nbsp if</code>
+                            <code class="blan">(</code>
+                            <code class="lgblue"> 0 </code>
+                            <code class="blan"> <= </code>
+                            <code class="lgblue">x</code>
+                            <code class="blanc">) {</code><br>
+                            <br>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"resultat"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">= ( </code> 
+                            <code class ="marron">"il existe le caractère "</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="blanc">s</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="marron">" dans la chaine"</code>
+                            <code class ="blanc">);</code> 
+                                    <br>  
+                            <code class="blanc">}</code>
+                            <code class="violet">&nbsp&nbsp else</code>
+                            <code class="blanc">{</code><br>
+                              
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"resultat"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">= ( </code> 
+                            <code class ="marron">"il n'existe pas le caractère "</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="blanc">s</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="marron">" dans la chaine"</code>
+                            <code class ="blanc">);</code><br>  
+                            <code class="blanc">}</code><br>
+            
+                           
+
+                            <code class ="vert">// La deuxième methode :</code><br>
+                            
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">chainee</code>
+                            <code class="balnc">=</code>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"chaine"</code>
+                            <code class ="blanc">).</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">;</code>
+                            <br>
+                             <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">char</code>
+                            <code class="balnc">=</code>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"char"</code>
+                            <code class ="blanc">).</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">;</code>
+                            <br>
+
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">lg</code>
+                            <code class="balnc">= (</code>
+                            <code class ="lgblue">ch</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">length</code>
+                            <code class ="blanc"> );</code><br>
+                            
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">i</code>
+                            <code class ="blanc">;</code>
+                            <br>
+							
+                            <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                            <code class="lgblue">x</code>
+                            <code class ="blanc">= 0 ;</code>
+                            <br>
+						
+                            <code class="violet">&nbsp&nbsp&nbsp&nbsp for</code>
+                            <code class="balnc">(</code>
+                            <code class="lgblue">i</code>
+                            <code class ="blanc">=</code>
+                            <code class ="lgblue">0</code>
+                            <code class ="blanc">;</code>
+                            <code class ="lgblue">i</code>
+                            <code class ="blanc"><=</code>
+                            <code class ="lgblue">lg</code>
+                            <code class ="blanc">;</code>
+                            <code class ="lgblue">i</code>
+                            <code class ="blanc">++){</code>
+                            <br>    
+                            <code class="violet">&nbsp&nbsp if</code>
+                            <code class="blan">((</code>
+                            <code class="lgblue"> chaine </code>
+                            <code class="blan"> . </code>
+                            <code class="lgblue">charAt</code>
+                            <code class="blanc">(</code>
+                            <code class="lgblue">i</code>
+                            <code class="blanc">) == </code>
+							<code class="lgblue">char</code>
+							<code class="blanc">)</code>
+                            <br>
+							
+							<code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspx</code>
+                            <code class ="blanc">= 1 ;</code>
+                            <br>
+							<code class ="blanc">&nbsp&nbsp&nbsp}</code><br>
+                            <code class ="blanc">  &nbsp&nbsp}</code><br>
+
+                            <code class="violet">&nbsp&nbsp if</code>
+                            <code class="blan">(</code>
+                            <code class="lgblue"> x </code>
+                            <code class="blan"> == </code>
+                            <code class="lgblue">1</code>
+                            <code class="blanc">) {</code><br>
+                            <br>
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"resultat"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">= ( </code> 
+                            <code class ="marron">"il existe le caractère "</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="blanc">s</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="marron">" dans la chaine"</code>
+                            <code class ="blanc">);</code> 
+                                    <br>  
+                            <code class="blanc">}</code>
+                            <code class="violet">&nbsp&nbsp else</code>
+                            <code class="blanc">{</code><br>
+                              
+                            <code class ="lgblue">document</code>
+                            <code class ="blanc">.</code>
+                            <code class ="yellow">getElementById</code>
+                            <code class ="blanc">(</code>
+                            <code class ="lgblue">"resultat"</code>
+                            <code class ="blanc">)</code>
+                            <code class ="lgblue">value</code>
+                            <code class ="blanc">= ( </code> 
+                            <code class ="marron">"il n'existe pas le caractère "</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="blanc">s</code>
+                            <code class ="blanc">+</code> 
+                            <code class ="marron">" dans la chaine"</code>
+                            <code class ="blanc">);</code><br>  
+                            <code class="blanc">}</code><br>
+            
+                        </p> 
+                        </div>                   
+                    </div>
+                   </div>
+                </div>
+             </div>
+                            
+                                <div class="footer">
+                                    <h2>&copy copyright ISET Bizerte ---<a href="#"> WebMaster</a></h2>
+                                </div>                            
+
+            <script>
+			
+			function chercher(){
+					let c = document.getElementById("chaine").value;
+                    let s = document.getElementById("char").value;
+                    let y = c.length;
+                    let x = c.indexOf(s); 
+                    if( 0 <= x ){
+                  
+                  document.getElementById("resultat").value=("il existe le caractère " + '"' +s + '"'+ " dans la chaine");  
+                }else {
+                    document.getElementById("resultat").value=("il n'existe pas le caractère " + '"' + s + '"' + " dans la chaine");
+                }  
+				}
+			
+                function chercher2(){
+                
+                    let c = document.getElementById("chaine2").value;
+                    let s = document.getElementById("char2").value;
+                    let y = c.length;
+					
+					let x=0;
+					
+         
+                     for( i = 0 ; i < y; i++ ) {
+        
+                         if(c.charAt(i)== s ){
+								x=1;
+                         }        
+                   }
+		 
+		       if( x == 1 ){
+                  
+                  document.getElementById("resultat2").value=("il existe le caractère " + '"' +s + '"'+ " dans la chaine");  
+                }else {
+                    document.getElementById("resultat2").value=("il n'existe pas le caractère " + '"' + s + '"' + " dans la chaine");
+                }  
+				}
+        </script>    
+
+<script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+    
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+</script>
+<script>
+    let d2 = document.getElementById("d2");
+    let l2 = document.getElementById("l2");
+
+    d2.onmouseover = aff;
+    function aff(){
+    l2.style.display = "block";
+    }
+    d2.onmouseout = cac;
+    function cac(){
+    l2.style.display = "none";
+}
+</script>
+<script>
+
+    let d3 = document.getElementById("d3");
+    let l3 = document.getElementById("l3");
+
+    d3.onmouseover = aff;
+    function aff(){
+    l3.style.display = "block";
+    }
+    d3.onmouseout = cac;
+    function cac(){
+    l3.style.display = "none";
+    }
+</script>
+</body>
+</html>

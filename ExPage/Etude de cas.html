@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/Css" href="Etude de cas.Css">
+    <meta charset="UTF-8">
+    <title>Menu:</title>
+</head>
+<body>
+<script>
+
+function choix(){
+let a=Number(document.f.nc1.value);
+let b=Number(document.f.nc2.value);
+let c=Number(document.f.DS.value);
+let x=Number(document.f.coef1.value);
+let y=Number(document.f.coef2.value);
+let z=Number(document.f.coef3.value);
+let cf = x + y + z;
+let Note1 = a * x;
+let Note2 = b * y;
+let DS = c * z ;
+let resultat = ((Note1 + Note2 + DS) / cf );
+
+document.f.res.value = resultat;
+
+}
+
+</script>
+<div class="header">
+    <div class="img"><img src=""></div>
+    <div class="titre"><h1>Bienvenue dans Resto Home</h1></div>
+</div>
+<form name="M">
+
+    <div class="Menu">
+    <div class="sale">
+    <h3>&nbsp&nbsp Entrée :</h3><br>
+    <img src="../images/salade.jpg"><br>
+    Salade ... 3.900DT<br><br>
+    <img src="../images/saladeMechouia.jpg"><br>
+    Salade Mechouia ... 5.000DT<br><br>
+    <img src="../images/Fromage.jpg"><br>
+    Fromage ... 1.000DT<br><br>
+    <img src="../images/ricotta.jpg"><br>
+    Ricotta ... 2.000DT
+    <br><br><br>
+    <h3>&nbsp&nbsp Principale :</h3><br>
+    <img src="../images/pizza.jpg"><br>
+    Pizza ... 11.900DT<br><br>
+    <img src="../images/omlette.jpg"><br>
+    Omlette ... 9.500DT<br><br>
+    <img src="../images/spaghetti.jpg"><br>
+    Spaghetti ... 13.500DT<br><br>
+    <img src="../images/couscous.jpg"><br>
+    Couscous ... 13.500DT<br><br>
+    <br></div>
+    <div class="sucre">
+    <h3>&nbsp&nbsp Dessert :</h3><br>
+    <img src="../images/saladeFruit.jpg"><br>
+    Salade de fruit ... 8.500DT<br><br>
+    <img src="../images/gateau.jpg"><br>
+    Gateau ... 4.500DT<br><br>
+    <img src="../images/glace.jpg"><br>
+    Glace ... 3.500DT<br><br>
+    <img src="../images/plate du jourD.jpg"><br>
+    Plate du jour ... 9.000DT<br><br>
+    <br><br>
+    <h3>&nbsp&nbsp Boissons : </h3><br>
+    <img src="../images/eau.jpg"><br>
+    l'Eau ... 1.500DT<br><br>
+    <img src="../images/jusF.jpg"><br>
+    Jus Fraise ... 3.500DT<br><br>
+    <img src="../images/jusB.jpg"><br>
+    Jus Banane ... 4.500DT<br><br>
+    <img src="../images/coca.jpg"><br>
+    Coca Cola ... 2.200DT<br> <br>
+</div>
+</form>
+</div>
+</div>
+<form name="f">
+ <fieldset>
+ <legend>Votre Commande</legend>
+ <br>
+ Entrée : &nbsp
+<select name="entree" class="Donner">
+    <option value="aucun">Aucun</option><br>
+    <option value="salade">Salade</option><br>
+    <option value="saladeMich">Salade Michouia</option><br>
+    <option value="fromage">Fromage</option><br>
+    <option value="ricotta">Ricotta</option><br>
+</select> pour  : 
+ <input type="text" name="pers1" >&nbsp Personne(s) <br><br>
+ Principale : &nbsp &nbsp
+ 
+<select name="principale" class="Donner">
+    <option value="aucun">Aucun</option><br>
+    <option value="couscous">Couscous</option><br>
+    <option value="spaghetti">Spaghetti</option><br>
+    <option value="pizza">Pizza</option><br>
+    <option value="omlette">Omlette</option><br>
+</select>
+ pour  : 
+ <input type="text" name="pers2">&nbsp Personne(s) <br><br>
+
+ Dessert : &nbsp &nbsp
+ <select name="dessert" class="Donner">
+    <option value="aucun">Aucun</option><br>
+    <option value="saladeF">Salade de Fruits</option><br>
+     <option value="gateau">Gateau</option><br>
+     <option value="glace">Glace</option><br>
+     <option value="plate">Plate du jour</option><br>
+ </select>  
+ pour  : 
+ <input type="text" name="pers3" >&nbsp Personne(s) <br><br>
+
+  Boissons : &nbsp &nbsp &nbsp &nbsp &nbsp
+  <select name="boissons" class="Donner">      
+      <option value="aucun">Aucun</option><br>
+    <option value="eau">Eau</option><br>
+    <option value="jusF">Jus Fraise</option><br>
+      <option value="jusB">Jus Banane</option><br>
+      <option value="coca">Coca Cola</option><br>
+  </select>
+ pour  : 
+ <input type="text" name="pers4" >&nbsp Personne(s) <br><br>
+
+ <br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="button" name="Moyenne" onclick="choix()" value="Calculer">
+ &nbsp&nbsp&nbsp&nbsp Total &nbsp&nbsp 
+ <input type="text" name="res" size ="10">
+</fieldset><br><br>
+Adresse : &nbsp &nbsp
+<textarea placeholder="entrez votre adresse ici "></textarea><br><br>
+<input type="submit" name="Moyenne" value="Passer La commande">
+ 
+</form> 
+</body>
+</html>

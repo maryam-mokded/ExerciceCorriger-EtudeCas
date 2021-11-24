@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>index</title>
+    <link rel="StyleSheet" type="text/css" href="style/index.css">
+</head>
+<body>
+    <script type="text/javascript" src="JavaScript/index.js"></script>
+    <div class="head">
+    <a href="index.html"><img src="images/logo.png"></img></a>
+    <h1>Bienvenue Dans Le Monde js</h1></div>
+    <div class="body">
+        
+<div class="nav">
+    <div id="d1">
+        <input type="button" value="Math" class="btn1">    
+        <ul id="l1" class="hide">
+            <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+            <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+            <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+            <li><a href="EX4Math.html"> Exercice 4 </a></li>
+            <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+            <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+            <li><a href="EX7Math.html"> Exercice 7 </a></li>
+            <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+        </ul>
+        </div>
+        
+        <div id="d2">
+            <input type="button" value="String" class="btn2">    
+            <ul id="l2" class="hide">
+                <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                <li><a href="Ex6String.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+            
+            <div id="d3">
+            <input type="button" value="Date" class="btn3">    
+            <ul id="l3" class="hide">
+                <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+       
+<a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+</div>
+        <div class="section">
+            <img src="images/iset.jpg">
+        </div>
+    </div>
+    <div class="footer">
+        <h2>&copy copyright ISET Bizerte ---<a href="#"> WebMaster</a></h2>
+    </div>
+    
+<script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+    
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+</script>
+<script>
+    let d2 = document.getElementById("d2");
+    let l2 = document.getElementById("l2");
+
+    d2.onmouseover = aff;
+    function aff(){
+    l2.style.display = "block";
+    }
+    d2.onmouseout = cac;
+    function cac(){
+    l2.style.display = "none";
+}
+</script>
+<script>
+
+    let d3 = document.getElementById("d3");
+    let l3 = document.getElementById("l3");
+
+    d3.onmouseover = aff;
+    function aff(){
+    l3.style.display = "block";
+    }
+    d3.onmouseout = cac;
+    function cac(){
+    l3.style.display = "none";
+    }
+</script>
+</body>
+</html>

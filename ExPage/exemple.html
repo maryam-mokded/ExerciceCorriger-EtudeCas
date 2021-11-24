@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Untitled</title>
+<script type= "text/javascript">
+function loadMois()
+{
+annee = "2005"; // ou document.form.annee.value;
+mois = document.form.mois.value;
+target = new Date(annee, mois, 0);
+nbJour = target.getDate();
+jours = document.form.jour;
+for (i=1;i<=31;i++)
+{
+j = document.createElement("OPTION");
+j.text = i;
+j.value = i;
+if (nbJour>=i)
+jours.options[i-1] = j;
+else
+jours.length = nbJour;
+}
+}
+
+</script>
+</head>
+
+<form name ="form">
+
+<select name="annee">
+
+</select>
+<select name="mois" onchange="loadMois()">
+<option value="1">Janvier</option>
+<option value="2">Février</option>
+<option value="3">Mars</option>
+<option value="4">Avril</option>
+<option value="5">Mai</option>
+<option value="6">Juin</option>
+<option value="7">Juillet</option>
+<option value="8">Août</option>
+<option value="9">Septembre</option>
+<option value="10">Octobre</option>
+<option value="11">Novembre</option>
+<option value="12">Décembre</option>
+</select>
+<select name="jour">
+</select>
+</form>
+
+<img src="Capture.PNG">
+</html>

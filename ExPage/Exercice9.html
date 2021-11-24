@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let euro =0;
+        euro = window.prompt("donner le montant : ");
+        euro =Number(euro);
+
+        document.write("le montant = "+euro +" €" + "<br>");
+
+        document.write("Pour reconstituer cette somme il faut disposer :"+"<br>");
+
+           let a = Math.floor(euro/1000);
+           let b = Math.floor((euro % 1000)/100);
+           let c = Math.floor(((euro % 1000)% 100) /50);
+           let d = Math.floor((((euro % 1000)% 100) % 50 )/20);
+           let e = Math.floor(((((euro % 1000)% 100) % 50 )%20)/5);
+           let f = Math.floor((((((euro % 1000)% 100) % 50 )%20)%5)/1);
+
+           document.write (a + " pièces de 1000 €" + "<br>" + b + " pièces de 100 €" + "<br>" + c + " pièces de 50 €" + "<br>" + d + " pièces de 20 €" + "<br>" + e + " pièces de 5 €" + "<br>" + f + " pièces de 1 €");
+
+    </script>
+
+</body>
+</html>

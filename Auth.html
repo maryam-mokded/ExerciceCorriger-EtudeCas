@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Authentification</title>
+    <link rel="stylesheet" type="text/css" href="../PageWeb/style/Auth.css">
+</head>
+<body>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <span id='error'></span><br>
+ <form name="fr">
+     <fieldset>
+         
+         <legend>Veillez s'authentifier</legend>
+         
+         <p>Login :         
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <input type="text" id="login" class="Donner"><br><br>
+         <span>Password :</span>        
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       <input type="password" id="password" class="Donner">
+        </p>
+        </fieldset><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+     <input type="button" id="valide" value="Valider">
+     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+     <input type="reset" name="reset" value="Annuler">
+    
+    </form>   
+<script>
+     
+    document.getElementById('valide').addEventListener('click',function(){
+    if((document.getElementById('password').value !='admin') && (document.getElementById('login').value !='admin')){
+    document.getElementById('error').innerHTML='Erreur .. Vérifier votre adresse et votre mot de passe !!';
+     
+    }else if ((document.getElementById('login').value !='admin')&& (document.getElementById('password').value =='admin')){
+
+        document.getElementById('error').innerHTML='Erreur .. Vérifier votre adresse !!';
+    
+    }else if ((document.getElementById('login').value =='admin')&& (document.getElementById('password').value !='admin')){
+        document.getElementById('error').innerHTML='Erreur .. Vérifier votre mot de passe !!';
+ 
+    }else {
+        document.location.href='index.html';
+        }
+},false);
+ 
+
+    
+</script>
+</body>
+</html>

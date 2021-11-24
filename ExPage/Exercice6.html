@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=0;
+        let b=0;
+        a = window.prompt("donner A ");
+        a = Number(a); 
+        
+        b = window.prompt("donner B  ");
+        b = Number(b);
+
+        
+        document.write ("Avant la permutation : "+ "<br>" + "A = " + a + "<br>");
+        document.write("B = " + b + "<br><br>");
+
+        let aux=0;
+        aux=a;
+        a=b;
+        b=aux;
+
+        
+        document.write ("Apres la permutation : " + "<br>" + "A = "+ a + "<br>");
+        document.write("B = "+ b + "<br>");
+ 
+    </script>
+</body>
+</html>

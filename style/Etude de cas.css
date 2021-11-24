@@ -1,0 +1,118 @@
+body{
+    display: grid;
+    grid-template-rows: 1 fr 8fr;
+    background-color:#35363a;
+}
+.body{
+    background-image: url("../images/menu.jpg");
+    background-size: cover;
+    height: 1025px;
+    margin-right: 90px; 
+    margin-left: 90px; 
+    padding-top: 14px;
+    display: grid;
+    grid-template-rows: 3fr 6fr;
+}
+.head{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.head img{
+    height : 130px;
+    width: 130px;
+    margin-left: 29px;
+    margin-top: 25px;
+}
+.head h2{
+    font-size: 65px;
+    font-family: Lucida Handwriting;
+    font-weight: bold;
+    margin-top: 54px;
+    margin-left: -30px;
+    color:#f6931f;
+}
+p{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: comic sans ms;
+}
+.menu{
+    display: grid;
+    grid-template-columns:5fr 5fr 5fr 5fr;
+    margin: 10px;
+}
+.title{
+    text-align: center;
+    color: #35363a;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: ravie;
+}
+.menu img{
+    height: 100px;
+    width: 100px;
+    border-radius: 0.5em;
+}
+
+input[type=button]{
+    width: 316px;
+    height: 65px;
+    border-radius: 1.5em;
+    font-size: 25px;
+    font-family: comic sans ms;
+    background-color: #eed4b3;
+    margin-left: 925px;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu h3{
+    font-family: ravie;
+    font-size: 30px;
+    color: #795548;
+}
+.header{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.entre{
+    text-align: center;
+}
+ 
+.principale{
+    text-align: center;
+}
+.sucre{
+    text-align: center;
+}
+.boissons{
+    text-align: center;
+
+}
+
+
+.lgblue{
+    color: #9cdcfe;
+}
+.blanc{
+    color: wheat;
+}
+.blue{
+    color : #569cd6;
+}
+.violet{
+    color: #c586c0;
+}
+
+.marron{
+    color: #ce9178;
+}
+.vert {
+    color: #5ce638!important;
+}
+.yellow{
+    color:#dcb862;
+}

@@ -1,0 +1,84 @@
+body{
+    padding-right: 330;
+    padding-left: 330px;
+    padding-top: 140px;
+    background-image: url("../images/back1.jpg");
+    background-size: cover;
+}
+ #error{
+     color: red;
+     text-align: center;
+     font-size: 18px;
+     font-family: comic sans ms;
+ }
+form{
+    padding: px30px;
+    margin: 30px;
+}
+
+fieldset{
+    border-radius: 0.5em;
+    background-color: wheat;
+    height:165px;
+    width: 500px;
+}
+ 
+legend{
+    font-size: 16px;
+    width: 165px;
+    height: 40px;
+    font-family: comic sans ms;
+    background-color: wheat;
+    border-radius: 0.5em;
+    border-top: 2px solid gray;
+}
+
+p{
+    font-size: 16px;
+    font-family: comic sans ms;
+    padding-left: 55px;
+    margin-top: 0px;
+} 
+
+input[type=text]{
+    background-color: wheat;
+    margin: 5px;
+    /* display: block; */
+    padding :5px;
+    border-radius: 0.4em;
+    width: 180px;
+    text-align: center;
+}
+
+input[type=password]{
+    background-color: wheat;
+    padding-top: 5px;
+    padding-bottom: 5PX;
+    border-radius: 0.4em;
+    width: 180px;
+    text-align: center;
+}
+
+.Donner{
+    font-size: 15px;
+    font-family: comic sans ms;
+} 
+input[type=button]{
+    background-color: wheat;
+    border-radius: 0.4em;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 16px;
+}
+input[type=reset]{
+    background-color: wheat;
+    border-radius: 0.4em;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 16px;
+}
+

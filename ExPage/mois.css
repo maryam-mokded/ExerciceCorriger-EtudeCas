@@ -1,0 +1,42 @@
+body{
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+}
+.body{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.section{
+    display: grid;
+    grid-template-rows: 2fr 2fr 2f;
+}
+
+
+/*<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create a SELECT and an OPTION element.</p>
+
+<button onclick="myFunction()">Try it</button>
+<h1>rihzlghjerligherio'iogheoruguhm:ZZEPFOM
+ERGOHOQERIHGOEMQRIUGEURGEIRYH
+<BR>RIFHERUIHGIUE</h1>
+<script>
+function myFunction() {
+  var x = document.createElement("SELECT");
+  x.setAttribute("id", "mySelect");
+  document.getElementById("annee").appendChild(x);
+
+  var z = document.createElement("option");
+  z.setAttribute("value", "volvocar");
+  var t = document.createTextNode("Volvo");
+  z.appendChild(t);
+  document.getElementById("mySelect").appendChild(z);
+}
+</script>
+<div id="annee"></div>
+<h2>zermohflerkgfergfzje</h2>
+</body>
+</html>
+*/

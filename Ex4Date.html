@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice Date 4</title>
+    <link rel="stylesheet" type="text/css" href="style/Ex4Date.css"> 
+</head>
+<body>
+    <div class="head">
+        <a href="index.html"><img src="images/logo.png"></img></a>
+        <h1>Bienvenue Dans Le Monde js</h1>
+    </div>
+        <div class="body">
+   
+<div class="nav">
+    <div id="d1">
+        <input type="button" value="Math" class="btn1">    
+        <ul id="l1" class="hide">
+            <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+            <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+            <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+            <li><a href="EX4Math.html"> Exercice 4 </a></li>
+            <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+            <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+            <li><a href="EX7Math.html"> Exercice 7 </a></li>
+            <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+            <li><a href="Ex9Math.html"> Exercice 9 </a></li>
+        </ul>
+        </div>
+        
+        <div id="d2">
+            <input type="button" value="String" class="btn2">    
+            <ul id="l2" class="hide">
+                <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                <li><a href="Ex6String.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+            
+            <div id="d3">
+            <input type="button" value="Date" class="btn3">    
+            <ul id="l3" class="hide">
+                <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+       
+<a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+</div>
+            <div class="section">
+                    <div class="titre">Exercice 4</div>
+                    <div class="gdpartie1">
+                        <div class="partie1">Enoncé </div>
+                        <div class="enonce"><p> Ecrire le code permettant de remplir un tableau Année contenant 
+                            les 12 mois de l’année,<br> et de demander à l’utilisateur de saisir un mois et de 
+                            chercher sa position <br>dans le tableau et à quel trimestre il appartient.  </p>
+                        </div>
+                    </div>
+                    <div class="gdpartie2">
+                        <div class="partie2">Exécution</div>
+                        
+                          <div class="form">
+                            <form name="fr">   
+                                <p>
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                    &nbsp&nbsp&nbsp&nbsp
+                                   Donner un mois &nbsp
+                                   <input type="text" name="chaine" id="txt" size=4% class="Donner"> 
+                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                 <input type="button" name="res" onclick="afficher()" value="Chercher" size="60%">
+                             
+                  <div class="resultat">
+                    <input type="text" name="res" id="resultat">
+                   </div><br>
+
+                   <div class="resultat">
+                    <input type="text" name="trim" id="trimestre">
+                   </div>
+                                </p>
+                               </form>
+                            </div>
+                    </div>
+
+                    <div  class="gdpartie3">
+                      <div class="partie3">code</div>
+                        <div class="code">
+                            <div class="num">
+                                <script>
+                                    let i=0;
+                                    for(i=0;i<17;i++){
+                                        document.write(i+1);
+                                        document.write("<br>");
+                                    }
+                                </script>
+                            </div>
+
+                            <div class="corps">                                
+                               <p>
+                                <code class ="blue"><</code>
+                                <code class ="blue">script</code>
+                                <code class ="blue">></code>
+                                <br>
+                                <code class ="blue">Function</code>
+                                <code class ="marron">Afficher</code>
+                                <code class ="blanc">(){</code>
+                                <br>       
+                                <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                                <code class="lgblue">Annee</code>
+                                <code class="balnc">= ( </code>
+                                <code class ="marron">"janvier"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"février"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"mars"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"avril"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"mai"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"juin"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"juillet"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"août"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"septembre"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"octobre"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"novembre"</code>
+                                <code class ="blanc">,</code>
+                                <code class ="marron">"décembre"</code>
+                                <code class ="blanc">) ; </code><br>
+                                                
+                                <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                                <code class="lgblue">mois</code>
+                                <code class="balnc">=</code>
+                                <code class ="lgblue">document</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="lgblue">"txt"</code>
+                                <code class ="blanc">)</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">);</code>
+                                <br>       
+ 
+                                <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                                <code class="lgblue">i</code>
+                                <code class ="blanc">;</code>
+                                <br>
+                                <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                                <code class="lgblue">c</code>
+                                <code class ="blanc">;</code>
+                                <br>
+                               
+                                <code class="blue">&nbsp&nbsp&nbsp&nbsp let</code>
+                                <code class="lgblue">t</code>
+                                <code class ="blanc"> = 0 </code>
+                                <code class ="blanc">;</code>
+                                <br>
+                                            
+                                <code class="violet">&nbsp&nbsp&nbsp&nbsp for</code>
+                                <code class="balnc">(</code>
+                                <code class="lgblue">i</code>
+                                <code class ="blanc">=</code>
+                                <code class ="lgblue">0</code>
+                                <code class ="blanc">;</code>
+                                <code class ="lgblue">i</code>
+                                <code class ="blanc"><=</code>
+                                <code class ="blanc"> (</code>
+                                <code class ="lgblue">annee</code>
+                                <code class ="blanc">.</code>
+                                <code class ="lgblue">length</code>
+                                <code class ="blanc">) ;</code>
+                                <code class ="lgblue">i</code>
+                                <code class ="blanc">++){</code>
+                                <br>    
+                                <code class="violet">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if</code>
+                                <code class="blanc">( </code>
+                                <code class="lgblue">mois</code>
+                                <code class="blan">==</code>
+                                <code class="lgblue">annee</code>
+                                <code class="blanc">[</code>
+                                <code class="lgblue">i</code>
+                                <code class="blan">] ) {</code><br>
+                                <code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp c</code>
+                                <code class="balnc">=</code>
+                                <code class ="lgblue">i</code>
+                                <code class ="blanc">+</code>
+                                <code class ="blanc">1</code>
+                                <code class ="blanc">;</code>
+                                <br>       
+                                <code class ="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdocument</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="marron">"resultat"</code>
+                                <code class ="blanc">) .</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">= (</code> 
+                                <code class ="marron">"La position  du mois"</code>
+                                <code class ="blanc">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp+</code> 
+                                <code class ="lgblue">mois</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">"est :"</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="lgblue">c</code>
+                                <code class ="blanc"> );</code><br>
+                                <code class="blanc">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}</code><br>
+                                <code class="blanc">}</code>
+                                    <br>
+                                <code class="violet">&nbsp&nbsp if</code>
+                                <code class="blanc">( (</code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 1 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 2 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 3 </code>
+                                <code class="blanc"> ) ) {</code><br>
+                                    
+                                <code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp t</code>
+                                <code class="balnc">=</code>
+                                <code class ="blanc">1</code>
+                                <code class ="blanc">;</code>
+                                <br>       
+                                <code class ="lgblue">document</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="lgblue">"resultat"</code>
+                                <code class ="blanc">)</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">= ( </code> 
+                                <code class ="marron">"Le mois "</code>
+                                <code class ="blanc">+</code>
+                                <code class ="lgblue">mois</code> 
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">" est appartient a la " </code>
+                                <code class ="blanc">+</code> 
+                                <code class ="lgblue">t</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">"trimestre de l’année " </code>
+                                <code class ="blanc">);</code>
+                                <br>   
+                                <code class ="blanc">}</code>
+                                <code class="violet">&nbsp&nbsp else</code>
+                                <code class ="blanc">{</code>
+                                <code class="violet">&nbsp&nbsp if</code>
+                                <code class="blanc">( (</code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 4 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 5 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 6 </code>
+                                <code class="blanc"> ) ) {</code><br>
+                                    
+                                <code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp t</code>
+                                <code class="balnc">=</code>
+                                <code class ="blanc">2</code>
+                                <code class ="blanc">;</code>
+                                <br>       
+                                <code class ="lgblue">document</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="lgblue">"resultat"</code>
+                                <code class ="blanc">)</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">= ( </code> 
+                                <code class ="marron">"Le mois "</code>
+                                <code class ="blanc">+</code>
+                                <code class ="lgblue">mois</code> 
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">" est appartient a la " </code>
+                                <code class ="blanc">+</code> 
+                                <code class ="lgblue">t</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">"trimestre de l’année " </code>
+                                <code class ="blanc">);</code>
+                                <br>   
+                                <br>   
+                                <code class ="blanc">}</code>
+                                <code class="violet">&nbsp&nbsp else</code>
+                                <code class ="blanc">{</code>
+                                <code class="violet">&nbsp&nbsp if</code>
+                                <code class="blanc">( (</code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 7 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 8 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 9 </code>
+                                <code class="blanc"> ) ) {</code><br>
+                                    
+                                <code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp t</code>
+                                <code class="balnc">=</code>
+                                <code class ="blanc">3</code>
+                                <code class ="blanc">;</code>
+                                <br>       
+                                <code class ="lgblue">document</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="lgblue">"resultat"</code>
+                                <code class ="blanc">)</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">= ( </code> 
+                                <code class ="marron">"Le mois "</code>
+                                <code class ="blanc">+</code>
+                                <code class ="lgblue">mois</code> 
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">" est appartient a la " </code>
+                                <code class ="blanc">+</code> 
+                                <code class ="lgblue">t</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">"trimestre de l’année " </code>
+                                <code class ="blanc">);</code>
+                                <br>   
+                                <br>   
+                                <code class ="blanc">}</code>
+                                <code class="violet">&nbsp&nbsp else</code>
+                                <code class ="blanc">{</code>
+                                <code class="violet">&nbsp&nbsp if</code>
+                                <code class="blanc">( (</code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 10 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue">11 </code>
+                                <code class="blan">) || ( </code>
+                                <code class="lgblue">c</code>
+                                <code class="blanc">==</code>
+                                <code class="lgblue"> 12 </code>
+                                <code class="blanc"> ) ) {</code><br>
+                                    
+                                <code class="lgblue">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp t</code>
+                                <code class="balnc">=</code>
+                                <code class ="blanc">4</code>
+                                <code class ="blanc">;</code>
+                                <br>       
+                                <code class ="lgblue">document</code>
+                                <code class ="blanc">.</code>
+                                <code class ="yellow">getElementById</code>
+                                <code class ="blanc">(</code>
+                                <code class ="lgblue">"resultat"</code>
+                                <code class ="blanc">)</code>
+                                <code class ="lgblue">value</code>
+                                <code class ="blanc">= ( </code> 
+                                <code class ="marron">"Le mois "</code>
+                                <code class ="blanc">+</code>
+                                <code class ="lgblue">mois</code> 
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">" est appartient a la " </code>
+                                <code class ="blanc">+</code> 
+                                <code class ="lgblue">t</code>
+                                <code class ="blanc">+</code> 
+                                <code class ="marron">"trimestre de l’année " </code>
+                                <code class ="blanc">);</code>
+                                <br>   
+                                <code class ="blanc">}</code><br>
+                                <code class ="blanc">}}}}</code><br> 
+                                <code class ="blanc">}</code><br>
+                                <code class ="blue"><</code>
+                                <code class ="blue">/</code>
+                                <code class ="blue">script</code>
+                                <code class ="blue">></code>
+                                <br>
+                           
+                               </p> 
+                            </div>                   
+                        </div>
+                   </div>
+                </div>
+             </div>
+                            
+                                <div class="footer">
+                                    <h2>&copy copyright ISET Bizerte ---<a href="#"> WebMaster</a></h2>
+                                </div>                            
+
+                                
+    <script>
+
+        function afficher(){
+    let annee = Array("janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre");
+ 
+        let mois = document.getElementById("txt").value;
+        let c;
+        let i ;            
+        let T=0;
+
+       for( i=0 ; i<(annee.length) ; i++ )
+        {
+            if(mois == annee[i]){
+            c = i + 1 ;    
+            document.getElementById("resultat").value = ("La position du mois " + mois + "  est  : "+ c );
+
+            }
+        }
+
+if (c == "1"){
+    T = 1;
+    document.getElementById("trimestre").value=
+    ("Le mois " + mois + " est appartient a la " + T + "er" + " trimestre de l'année");                
+}
+
+else { if ((c == "2" ) || (c == "3" )){
+    T = 1;
+    document.getElementById("trimestre").value=("Le mois " + mois + " est appartient a la " + T + "er" + " trimestre de l'année");                
+} 
+
+else{ if ( (c == "4" ) || (c == "5" ) || (c == "6" )){
+    T = 2;
+    document.getElementById("trimestre").value=("Le mois " + mois + " est appartient a la " + T + "ème" + " trimestre de l'année");                
+}
+
+else{ if ( (c == "7" ) || (c == "8" ) || (c == "9" )){
+    T = 3;
+    document.getElementById("trimestre").value=("Le mois " + mois + " est appartient a la " + T + "ème" + " trimestre de l'année");                
+    }
+    else{ if ( (c == "10" ) || (c == "11" ) || (c == "12" )){
+    T = 4;
+    document.getElementById("trimestre").value=("Le mois " + mois + " est appartient a la " + T + "ème" + " trimestre de l'année");                
+    }
+            }}}}
+
+
+}
+            </script>
+
+<script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+    
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+</script>
+<script>
+    let d2 = document.getElementById("d2");
+    let l2 = document.getElementById("l2");
+
+    d2.onmouseover = aff;
+    function aff(){
+    l2.style.display = "block";
+    }
+    d2.onmouseout = cac;
+    function cac(){
+    l2.style.display = "none";
+}
+</script>
+<script>
+
+    let d3 = document.getElementById("d3");
+    let l3 = document.getElementById("l3");
+
+    d3.onmouseover = aff;
+    function aff(){
+    l3.style.display = "block";
+    }
+    d3.onmouseout = cac;
+    function cac(){
+    l3.style.display = "none";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poids</title>
+</head>
+<body>
+<script>
+function calcule(){
+let a=Number(document.f.taille.value);
+let b=Number(document.f.age.value);
+let c=Number(document.f.sexe.value);
+
+if(c == "homme"){
+    
+document.f.res.value = ((3*a-250)*(b+270)/1200);
+
+}else{
+    document.f.res.value = (((a/2-30)*(180+1)/200));
+}
+</script>
+<form name="f">
+<fieldset>
+<legend>Poids</legend>
+
+Taille en cm: &nbsp &nbsp &nbsp &nbsp
+<input type ="text" name="taille" size="5">  <br><br>
+
+Age : &nbsp &nbsp &nbsp &nbsp
+<input type ="text" name="age" size="5">  <br><br>
+
+ Sexe : &nbsp &nbsp &nbsp &nbsp &nbsp
+ <input type ="text" name="sexe" size="5">  <br><br>
+
+</fieldset>
+
+<br>
+<input type="button" name="poids" onclick= "calcule()" value="Calculer">
+<br><br><br>
+Poids Ideal : 
+<input type="text" name="res" size ="10">
+</form>
+</body>
+</html>

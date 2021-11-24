@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Entrez le mot de pass: </span><input type='password' id='password'>
+<button id='ok'>Ok</button>
+<span id='error'></span>
+ 
+<script>
+document.getElementById('ok').addEventListener('click',function(){
+    if(document.getElementById('password').value=='azerty'){
+        location.href='http://google.fr';
+    }
+    else{
+        document.getElementById('error').innerHTML='Le mot de pass est incorecte';
+    }
+},false);
+ 
+ 
+ 
+</script>
+</body>
+</html>

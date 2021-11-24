@@ -1,0 +1,72 @@
+.hide{display: none;}
+
+
+
+
+.nav input[type=button]{
+    background-image: url(../images/Capture.PNG);
+    background-repeat: repeat-x;
+    border : 0.4px solid black;
+    border-radius: 0.4em;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-top: 5px;
+    box-shadow: 3px 2px 0px rgb(87, 80, 80); 
+}
+
+.hide{
+    display: none;
+    background-color: #575050;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 0px;
+    padding-bottom: 9px;
+    border-radius: 0.5em;
+    margin-bottom:4px;
+    margin-top: 0px;
+    margin-left: 6px;
+    list-style-type: none;
+}
+
+
+<div class="nav">
+                <div id="d1">
+                    <input type="button" value="Math" class="btn1">    
+                    <ul id="l1" class="hide">
+                        <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+                        <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+                        <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+                        <li><a href="EX4Math.html"> Exercice 4 </a></li>
+                        <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+                        <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+                        <li><a href="EX7Math.html"> Exercice 7 </a></li>
+                        <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+                    </ul>
+                    </div>
+                    
+                    <div id="d2">
+                        <input type="button" value="String" class="btn2">    
+                        <ul id="l2" class="hide">
+                            <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                            <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                            <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                            <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                            <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                            <li><a href="Ex6String.html"> Exercice 6 </a></li>
+                        </ul>
+                        </div>
+                        
+                        <div id="d3">
+                        <input type="button" value="Date" class="btn3">    
+                        <ul id="l3" class="hide">
+                            <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                            <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                            <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                            <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                            <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                            <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+                        </ul>
+                        </div>
+                   
+           <a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+            </div>

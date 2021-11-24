@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice Date 6</title>
+</head>
+<body>
+    <div class="head">
+        <a href="index.html"><img src="images/logo.png"></img></a>
+        <h1>Bienvenue Dans Le Monde js</h1>
+    </div>
+        <div class="body">
+            
+<div class="nav">
+    <div id="d1">
+        <input type="button" value="Math" class="btn1">    
+        <ul id="l1" class="hide">
+            <li><a href="Ex1Math.html"> Exercice 1 </a></li>
+            <li><a href="Ex2Math.html"> Exercice 2 </a></li>
+            <li><a href="Ex3Math.html"> Exercice 3 </a></li>
+            <li><a href="EX4Math.html"> Exercice 4 </a></li>
+            <li><a href="Ex5Math.html"> Exercice 5 </a></li>
+            <li><a href="Ex6Math.html"> Exercice 6 </a></li>
+            <li><a href="EX7Math.html"> Exercice 7 </a></li>
+            <li><a href="Ex8Math.html"> Exercice 8 </a></li>
+            <li><a href="Ex9Math.html"> Exercice 9 </a></li>
+        </ul>
+        </div>
+        
+        <div id="d2">
+            <input type="button" value="String" class="btn2">    
+            <ul id="l2" class="hide">
+                <li><a href="Ex1String.html"> Exercice 1 </a></li>
+                <li><a href="Ex2String.html"> Exercice 2 </a></li>
+                <li><a href="Ex3String.html"> Exercice 3 </a></li>
+                <li><a href="Ex4String.html"> Exercice 4 </a></li>
+                <li><a href="Ex5String.html"> Exercice 5 </a></li>
+                <li><a href="Ex6String.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+            
+            <div id="d3">
+            <input type="button" value="Date" class="btn3">    
+            <ul id="l3" class="hide">
+                <li><a href="Ex1Date.html"> Exercice 1 </a></li>
+                <li><a href="Ex2Date.html"> Exercice 2 </a></li>
+                <li><a href="Ex3Date.html"> Exercice 3 </a></li>
+                <li><a href="Ex4Date.html"> Exercice 4 </a></li>
+                <li><a href="Ex5Date.html"> Exercice 5 </a></li>
+                <li><a href="Ex6Date.html"> Exercice 6 </a></li>
+            </ul>
+            </div>
+       
+<a href="Etude de cas.html"><input type="button" OnMouseOver="afficher()"value="Etude de cas"class="btn4"></a><br>
+</div>
+            <div class="section">
+              <div class="titre">Exercice 6</div>
+              <div class="gdpartie1">
+                <div class="partie1">Enoncé </div>
+                <div class="enonce"><p>On se propose de développer un formulaire HTML,
+                  composé d’une zone de texte, de trois objets liste déroulante et d’un bouton de
+                  type submit . La zone de texte sera créé avec du code HTML, 
+                  alors que les trois listes seront générées avec du code Java Script, 
+                  qui contient respectivement les numéros des jours d’un mois (de 1 à 31), 
+                  les mois de l’année (de Janvier à Décembre) et les années (de 1975 jusqu’à 
+                  cette année). </p>
+                </div>
+              </div>
+              <div class="gdpartie2">
+                        <div class="partie2">Exécution</div>
+                        
+                    <div class="form">
+
+                            <div class="jour" id="p1">
+                                <p>Jour </p>
+                                    <br>                
+                            </div> 
+                               
+                            
+                            <div class="mois" id="p2">
+                                <p>Mois </p>
+                                <br>                                    
+                            </div>
+                            <div class="annee" id="p3">
+                                <p>Année </p>
+                            </div><br><br>
+
+                            <div class="resultat">
+                            <input type="submit" name="envoyer" value="Envoyer">
+                            </div>
+                    </div>
+                    </div>
+                    <div  class="gdpartie3">
+                      <div class="partie3">code</div>
+                        <div class="code">
+                            <div class="num">
+                                <script>
+                                    let i=0;
+                                    for(i=0;i<17;i++){
+                                        document.write(i+1);
+                                        document.write("<br>");
+                                    }
+                                </script>
+                            </div>
+
+                            <div class="corps">                                
+
+                            </div>                   
+                        </div>
+                   </div>
+                </div>
+             </div>
+                            
+                                <div class="footer">
+     <h2>&copy copyright ISET Bizerte ---<a href="#"> WebMaster</a></h2>
+                                </div>
+<script>
+
+  var jour = document.createElement("SELECT");
+  jour.setAttribute("id", "jour");
+  document.getElementById("p1").appendChild(jour);
+let i ;
+for(i = 1 ; i<=31 ; i++){
+  var m = document.createElement("option");
+  m.setAttribute("value", "mois");
+  var jr = document.createTextNode(i);
+  m.appendChild(jr);
+  document.getElementById("jour").appendChild(m);
+}
+</script>
+
+
+  <script>
+    var x = document.createElement("SELECT");
+    x.setAttribute("id", "mySelect");
+    document.getElementById("p2").appendChild(x);
+
+    var m1 = document.createElement("option");
+    m1.setAttribute("value", "mois");
+    var a1 = document.createTextNode("Janvier");
+    m1.appendChild(a1);
+
+    var m2 = document.createElement("option");
+    m2.setAttribute("value", "mois");
+    var a2 = document.createTextNode("Février");
+    m2.appendChild(a2);
+
+    var m3 = document.createElement("option");
+    m3.setAttribute("value", "mois");
+    var a3 = document.createTextNode("Mars");
+    m3.appendChild(a3);
+
+    var m4 = document.createElement("option");
+    m4.setAttribute("value", "mois");
+    var a4 = document.createTextNode("Avril");
+    m4.appendChild(a4);
+
+    var m5 = document.createElement("option");
+    m5.setAttribute("value", "mois");
+    var a5 = document.createTextNode("Mai");
+    m5.appendChild(a5);
+
+    var m6 = document.createElement("option");
+    m6.setAttribute("value", "mois");
+    var a6 = document.createTextNode("Juin");
+    m6.appendChild(a6);
+
+    var m7 = document.createElement("option");
+    m7.setAttribute("value", "mois");
+    var a7 = document.createTextNode("Juillet");
+    m7.appendChild(a7);
+
+    var m8 = document.createElement("option");
+    m8.setAttribute("value", "mois");
+    var a8 = document.createTextNode("Août");
+    m8.appendChild(a8);
+
+    var m9 = document.createElement("option");
+    m9.setAttribute("value", "mois");
+    var a9 = document.createTextNode("Septembre");
+    m9.appendChild(a9);
+
+    var m10 = document.createElement("option");
+    m10.setAttribute("value", "mois");
+    var a10 = document.createTextNode("Octobre");
+    m10.appendChild(a10);
+
+    var m11 = document.createElement("option");
+    m11.setAttribute("value", "mois");
+    var a11 = document.createTextNode("Novombre");
+    m11.appendChild(a11);
+
+    var m12 = document.createElement("option");
+    m12.setAttribute("value", "mois");
+    var a12 = document.createTextNode("Décembre");
+    m12.appendChild(a12);
+
+
+    document.getElementById("mySelect").appendChild(m1);
+    document.getElementById("mySelect").appendChild(m2);
+    document.getElementById("mySelect").appendChild(m3);
+    document.getElementById("mySelect").appendChild(m4);
+    document.getElementById("mySelect").appendChild(m5);
+    document.getElementById("mySelect").appendChild(m6);
+    document.getElementById("mySelect").appendChild(m7);
+    document.getElementById("mySelect").appendChild(m8);
+    document.getElementById("mySelect").appendChild(m9);
+    document.getElementById("mySelect").appendChild(m10);
+    document.getElementById("mySelect").appendChild(m11);
+    document.getElementById("mySelect").appendChild(m12);
+
+  </script>
+  <script>
+    document.getElementById("annee").value = annee();
+    function annee(){     
+      var y = document.createElement("SELECT");
+      y.setAttribute("id", "annee");
+      document.getElementById("p3").appendChild(y);
+      let i ;
+      for(i = 1975 ; i <= 2020 ; i++){
+        var a = document.createElement("option");
+        a.setAttribute("value", "mois");
+        var an = document.createTextNode(i);
+        a.appendChild(an);
+        document.getElementById("annee").appendChild(a);
+      }
+    }
+  </script>
+
+  <script>
+    let d1 = document.getElementById("d1");
+    let l1 = document.getElementById("l1");
+
+    d1.onmouseover = aff;
+    function aff(){
+      l1.style.display = "block";
+    }
+    d1.onmouseout = cac;
+    function cac(){
+      l1.style.display = "none";
+    }
+  </script>
+  <script>
+    let d2 = document.getElementById("d2");
+    let l2 = document.getElementById("l2");
+
+    d2.onmouseover = aff;
+    function aff(){
+      l2.style.display = "block";
+    }
+    d2.onmouseout = cac;
+    function cac(){
+      l2.style.display = "none";
+    }
+  </script>
+  <script>
+
+    let d3 = document.getElementById("d3");
+    let l3 = document.getElementById("l3");
+
+    d3.onmouseover = aff;
+    function aff(){
+      l3.style.display = "block";
+    }
+    d3.onmouseout = cac;
+    function cac(){
+      l3.style.display = "none";
+    }
+  </script>
+  </body>
+</html>

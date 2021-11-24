@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mois</title>
+</head>
+<body>   
+</body>
+<script>
+
+  var jour = document.createElement("SELECT");
+  jour.setAttribute("id", "jour");
+  document.body.appendChild(jour);
+let i ;
+for(i = 1 ; i<=31 ; i++){
+  var m = document.createElement("option");
+  m.setAttribute("value", "mois");
+  var jr = document.createTextNode(i);
+  m.appendChild(jr);
+  document.getElementById("jour").appendChild(m);
+}
+<!-- </script>
+<script> -->
+  var x = document.createElement("SELECT");
+  x.setAttribute("id", "mySelect");
+  document.body.appendChild(x);
+
+  var m1 = document.createElement("option");
+  m1.setAttribute("value", "mois");
+  var a1 = document.createTextNode("Janvier");
+  m1.appendChild(a1);
+  
+  var m2 = document.createElement("option");
+  m2.setAttribute("value", "mois");
+  var a2 = document.createTextNode("Février");
+  m2.appendChild(a2);
+  
+  var m3 = document.createElement("option");
+  m3.setAttribute("value", "mois");
+  var a3 = document.createTextNode("Mars");
+  m3.appendChild(a3);
+  
+  var m4 = document.createElement("option");
+  m4.setAttribute("value", "mois");
+  var a4 = document.createTextNode("Avril");
+  m4.appendChild(a4);
+  
+  var m5 = document.createElement("option");
+  m5.setAttribute("value", "mois");
+  var a5 = document.createTextNode("Mai");
+  m5.appendChild(a5);
+  
+  var m6 = document.createElement("option");
+  m6.setAttribute("value", "mois");
+  var a6 = document.createTextNode("Juin");
+  m6.appendChild(a6);
+
+  var m7 = document.createElement("option");
+  m7.setAttribute("value", "mois");
+  var a7 = document.createTextNode("Juillet");
+  m7.appendChild(a7);
+  
+  var m8 = document.createElement("option");
+  m8.setAttribute("value", "mois");
+  var a8 = document.createTextNode("Août");
+  m8.appendChild(a8);
+  
+  var m9 = document.createElement("option");
+  m9.setAttribute("value", "mois");
+  var a9 = document.createTextNode("Septembre");
+  m9.appendChild(a9);
+  
+  var m10 = document.createElement("option");
+  m10.setAttribute("value", "mois");
+  var a10 = document.createTextNode("Octobre");
+  m10.appendChild(a10);
+  
+  var m11 = document.createElement("option");
+  m11.setAttribute("value", "mois");
+  var a11 = document.createTextNode("Novombre");
+  m11.appendChild(a11);
+  
+  var m12 = document.createElement("option");
+  m12.setAttribute("value", "mois");
+  var a12 = document.createTextNode("Décembre");
+  m12.appendChild(a12);
+
+  
+  document.getElementById("mySelect").appendChild(m1);
+  document.getElementById("mySelect").appendChild(m2);
+  document.getElementById("mySelect").appendChild(m3);
+  document.getElementById("mySelect").appendChild(m4);
+  document.getElementById("mySelect").appendChild(m5);
+  document.getElementById("mySelect").appendChild(m6);
+  document.getElementById("mySelect").appendChild(m7);
+  document.getElementById("mySelect").appendChild(m8);
+  document.getElementById("mySelect").appendChild(m9);
+  document.getElementById("mySelect").appendChild(m10);
+  document.getElementById("mySelect").appendChild(m11);
+  document.getElementById("mySelect").appendChild(m12);
+
+    // </script>
+    // <script>
+        document.getElementById("annee").value = annee();
+ function annee(){     
+        var y = document.createElement("SELECT");
+        y.setAttribute("id", "annee");
+        document.body.appendChild(y);
+        let i ;
+        for(i = 1975 ; i <= 2020 ; i++){
+        var a = document.createElement("option");
+        a.setAttribute("value", "mois");
+        var an = document.createTextNode(i);
+        a.appendChild(an);
+        document.getElementById("annee").appendChild(a);
+      }
+    }
+      </script>
+
+</html>

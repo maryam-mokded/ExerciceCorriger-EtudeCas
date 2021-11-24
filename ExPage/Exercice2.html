@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=0;
+        let b=0;
+      
+        a = window.prompt("donner a : ");
+        a = Number(a);
+        
+        b = window.prompt("donner b : ");
+        b = Number(b);
+
+        let car;
+        car= window.prompt("choisir l operation + - * / % : ");
+        
+        switch (car) {
+            case '+' :
+            let som = a+b;
+             document.write("somme = "+som);    
+                break;
+        
+                
+            case '-' :
+            let sous = a-b;
+             document.write(a + " - "+ b + " = "+sous);    
+                break;
+                
+            case '/' :
+            let div = a/b;
+             document.write(a + " / "+ b + " = "+div);    
+                break;
+        
+                
+            case '*' :
+            let mult= a*b;
+             document.write(a + " * "+ b + " = "+mult);    
+                break;
+        
+                
+            case '%' :
+            let mod = a%b;
+            document.write(a + " % "+ b + " = "+mod);    
+                break;
+        
+            default:
+                document.write("Erreur !!");
+                break;
+        }
+
+
+
+    </script>
+</body>
+</html>
